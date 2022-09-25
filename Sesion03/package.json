@@ -1,0 +1,22 @@
+{
+  "name": "orm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "run": "node example.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "pg": "^8.8.0",
+    "sequelize": "^6.21.5",
+    "sqlite3": "^5.0.11"
+  }
+}
