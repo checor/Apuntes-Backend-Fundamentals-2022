@@ -15,6 +15,13 @@ const auth = {
         userProperty: 'user',
         getToken: getTokenFromHeader
     }),
+    optional: expressjwt({
+        secret: secret,
+        algorithms: ['HS256'],
+        userProperty: 'usuario',
+        credentialsRequired: false,
+        getToken: getTokenFromHeader
+    })
 }
 
 module.exports = auth;

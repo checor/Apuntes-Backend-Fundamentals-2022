@@ -8,10 +8,10 @@ const {
 } = require('../controllers/gods')
 const auth = require('../config/auth');
 
-router.get('/', auth.required, getGods);
-router.get('/:id', getGod);
-router.post('/', createGod);
-router.patch('/:id', updateGod);
-router.delete('/:id', deleteGod);
+router.get('/', auth.optional, getGods);
+router.get('/:id', auth.optional, getGod);
+router.post('/', auth.required, createGod);
+router.patch('/:id', auth.required, updateGod);
+router.delete('/:id', auth.required, deleteGod);
 
 module.exports = router;
